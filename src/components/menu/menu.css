@@ -36,7 +36,7 @@
         font-size: 0.85rem;
     }
 
-    #home-container {
-        flex-direction: column;
+    #menu-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
