@@ -1,0 +1,27 @@
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+#about-container > p {
+font-size: 1.025rem;
+color: white;
+font-weight: 600;
+background-color: rgba(0, 0, 0, 0.22);
+border-radius: 10px;
+padding: 2px 12px;
+}
+  
+#about-container iframe {
+    width: 600px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 400px) {
+  #about-container iframe {
+    width: 325px;
+    height: 175px;
+}
+}

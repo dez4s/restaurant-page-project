@@ -1,0 +1,45 @@
+header div.container {
+  align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav .btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 0.5em 0.9em;
+    background-color: #202B43;
+    box-shadow: rgba(33, 31, 31, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  nav .btn:hover {
+    filter: brightness(75%);
+  }
+
+  nav .btn:active {
+    transform: translateY(-2px) translateX(-1px);
+  }
+
+@media only screen and (max-width: 768px) {
+    nav {
+      display: flex;
+      gap: 5px;
+  }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+  header div.container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
