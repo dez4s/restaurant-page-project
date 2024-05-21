@@ -20,9 +20,14 @@ export const createAbout = (function () {
         return p;
     };
 
-    aboutContainer.appendChild(createPara(' Address: I-40, Albuquerque, NM 87121, USA via Route 66'));
-    aboutContainer.appendChild(createPara('In order to make a reservation call at the number below. Open 24/7'));
-    aboutContainer.appendChild(createPara('Telephone number: 505-123-4567'));
+    const paraContainer = document.createElement('div');
+    paraContainer.id = 'para-container';
+
+    paraContainer.appendChild(createPara(' Address: I-40, Albuquerque, NM 87121, USA via Route 66'));
+    paraContainer.appendChild(createPara('Reservations: In order to make a reservation dial the number below. Open 24/7'));
+    paraContainer.appendChild(createPara('Telephone number: 505-123-4567'));
+
+    aboutContainer.appendChild(paraContainer);
 
     return aboutContainer;
 })();
