@@ -75,7 +75,7 @@ const createMenu = async () => {
 
 export default await createMenu();
 
-//
+// Non .json file version
 // function createMenu() {
 //     const menuContainer = document.createElement('div');
 //     menuContainer.id = 'menu-container';
