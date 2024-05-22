@@ -51,5 +51,4 @@ function createHome() {
     return { homeContainer, homeBtns };
 }
 
-
 export default createHome();
