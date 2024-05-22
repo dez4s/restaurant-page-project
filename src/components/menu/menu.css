@@ -24,7 +24,6 @@
 
 #menu-container .card > p {
     font-size: 0.95rem;
-    font-style: italic;
 }
 
 #menu-container .card > p.price {
@@ -32,6 +31,10 @@
     font-weight: 550;
 }
 
+#menu-container .card > p.ingredients {
+    font-style: italic;
+    font-size: 0.87rem;
+}
 
 #menu-container .card > *:not(:first-child) {
     margin-top: 10px;

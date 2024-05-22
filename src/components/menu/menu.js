@@ -50,7 +50,7 @@ const createMenu = async () => {
         createTextElem(card, 'p', item.price, 'price');
         createTextElem(card, 'p', item.description);
         
-        let ingredientList = '';
+        let ingredientList = 'Ingredients: ';
         item.ingredients.forEach((ingredient, index) => {
             if (index < item.ingredients.length - 1) {
                 ingredientList += ingredient + ', '; 
@@ -58,7 +58,7 @@ const createMenu = async () => {
                 ingredientList += ingredient;
             }
         });
-        createTextElem(card, 'p', ingredientList);
+        createTextElem(card, 'p', ingredientList, 'ingredients');
 
         return card;
     };
