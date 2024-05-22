@@ -27,6 +27,12 @@
     font-style: italic;
 }
 
+#menu-container .card > p.price {
+    font-size: 0.975rem;
+    font-weight: 550;
+}
+
+
 #menu-container .card > *:not(:first-child) {
     margin-top: 10px;
 }
@@ -40,3 +46,4 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
+
